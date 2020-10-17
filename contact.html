@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
    <head>
       <!-- basic -->
       <meta charset="utf-8">
@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Auricle - The Multi-Purpose Responsive HTML5 Template</title>
+      <title>Contacto</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -24,39 +24,65 @@
       <link rel="stylesheet" href="css/colors.css" />
       <!-- wow animation css -->
       <link rel="stylesheet" href="css/animate.css" />
+      <link rel="stylesheet" href="css/estilosemanas.css" />
+      <link rel="stylesheet" href="css/imagenes.css" />
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script src="sections.js" language="javascript" type="text/javascript"></script>
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
    </head>
-   <body id="default_theme" class="team">
+   <body id="default_theme" class="home_page1">
       <!-- header -->
       <header class="header header_style1">
          <div class="container">
             <div class="row">
                <div class="col-md-9 col-lg-10">
-                  <div class="logo"><a href="index.html"><img src="images/logo.png" alt="#" /></a></div>
+                  <div class="logo" id="logo"><a href="index.html"><img src="images/logo.png" alt="#" /></a></div>
                   <div class="main_menu float-right">
                      <div class="menu">
                         <ul class="clearfix">
-                           <li><a href="index.html">Home</a></li>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="service.html">Service</a></li>
-                           <li><a href="screenshots.html">Screenshots</a></li>
-                           <li><a href="pricing.html">Pricing</a></li>
-                           <li><a href="team.html">Team</a></li>
-                           <li class="active"><a href="contact.html">Contact</a></li>
+                           <li class="active"><a href="index.html">Inicio</a></li>
+                           <!--<li><a href="about.html">Sobre Nosotros</a></li>-->
+                           <li><a href="service.html">Avances</a></li>
+                           <!--<li><a href="screenshots.html">Galería</a></li>-->
+                           <!---<li><a href="pricing.html">Precios</a></li> -->
+                           <li><a href="team.html">Equipo</a></li>
+                           <li><a href="contact.html">Contáctanos</a></li>
                         </ul>
                      </div>
                   </div>
                </div>
                <div class="col-md-3 col-lg-2">
-                  <div class="right_bt"><a class="bt_main" href="index.html">Get Support</a> </div>
+                  <div class="right_bt"><a class="bt_main" href="https://docs.google.com/document/d/1-CMTh7oE5VFfCplZ4cSxOpx9_Iq5noIV/edit">Informe</a> </div>
                </div>
             </div>
          </div>
       </header>
+      <section id="banner_parallax" class="slide_banner1">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="full">
+                     <div class="slide_cont">
+                        <h2>  Proyecto de Biodiseño 1 <br> 2020 - 2</h2>
+                        <p>Desafío de Rehabilitación Respiratoria en pacientes post - COVID </p>
+                        <!--- <div class="full slide_bt"> <a class="white_bt bt_main" href="index.html">Download</a> </div> --->
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="full">
+                     <div class="slide_pc_img wow fadeInRight" data-wow-delay="1s" data-wow-duration="2s"> <img src="images/pc-banner.png" alt="#" /> </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
       <!-- end header -->
+
+
       <!-- section -->
       <section class="contact_section">
          <div class="container-fluid">
@@ -71,27 +97,29 @@
                      <div class="contact_form white_heading_border">
                         <div class="contact_form_inner">
                            <div class="full_heading white_fonts heading_main heading_style_1">
-                              <h2>Contact <span>us</span></h2>
+                              <h2>Contáctanos</h2>
                            </div>
-                           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                           <p>Somos un equipo que busca brindar soluciones de alto impacto a través de la tecnología y mejorar la calidad de vida del usuario.<br>
+                              No dudes en contactarnos a través de nuestras redes, podemos brindarte información acerca de nuestro trabajo!<br>
+                              Solo déjanos tu nombre, tu número y tu correo para poder mantenerte al tanto. Cualquier duda, consulta o sugerencia es bienvenida.</p>
                            <div class="form_contact">
                               <!-- form -->
                               <form action="index.html">
                                  <fieldset>
                                     <div class="field">
-                                       <input type="text" name="name" placeholder="Your name" required="" />
+                                       <input type="text" name="name" placeholder="Tu nombre" required="">
                                     </div>
                                     <div class="field">
-                                       <input type="text" name="name" placeholder="Your phone" required="" />
+                                       <input type="text" name="name" placeholder="Tu celular" required="">
                                     </div>
                                     <div class="field">
-                                       <input type="email" name="email" placeholder="Email" required="" />
+                                       <input type="email" name="email" placeholder="Email" required="">
                                     </div>
                                     <div class="field">
-                                       <textarea name="messager" placeholder="Messager" required=""></textarea>
+                                       <textarea name="messager" placeholder="Mensaje" required=""></textarea>
                                     </div>
                                     <div class="field">
-                                       <button class="field_bt">Send</button>
+                                       <button class="field_bt">Enviar</button>
                                     </div>
                                  </fieldset>
                               </form>
@@ -104,22 +132,23 @@
             </div>
          </div>
       </section>
+      
       <!-- end section -->
       <!-- footer -->
-      <footer class="footer_style_2">
+      <!--<footer class="footer_style_2">
          <div class="footer_top">
             <div class="container">
                <div class="row">
                   <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 margin_bottom_30">
                      <div class="full width_9" style="margin-bottom:25px;"> <a href="index.html"><img class="img-responsive" width="250" src="images/logo.png" alt="#"></a> </div>
                      <div class="full width_9">
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <p>Estudiantes de Ingeniería Biomédica decididos a mejorar el bienestar del usuario en el área de salud.</p>
                      </div>
                      <div class="full width_9">
                         <p>the vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati..</p>
                      </div>
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 margin_bottom_30">
+                  <!---<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 margin_bottom_30">
                      <div class="full">
                         <div class="footer_blog_2 width_9">
                            <h3>Twitter Feed</h3>
@@ -131,11 +160,11 @@
                            </p>
                         </div>
                      </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 margin_bottom_30">
+                  </div> --->
+                  <!--<div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 margin_bottom_30">
                      <div class="full">
                         <div class="footer_blog_2">
-                           <h3>Social</h3>
+                           <h3>Redes Sociales</h3>
                         </div>
                      </div>
                      <div class="full">
@@ -147,7 +176,7 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 margin_bottom_30">
+                  <!---<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 margin_bottom_30">
                      <div class="full">
                         <div class="footer_blog_2 width_9">
                            <h3>Blog</h3>
@@ -174,16 +203,19 @@
                            </div>
                         </div>
                      </div>
-                  </div>
-               </div>
+                  </div>  --->
+               <!--</div>
             </div>
-         </div>
+         </div> -->
          <!-- footer bottom -->
+      <footer class="footer_style_2">
          <div class="footer_bottom">
-            <p>Dessigned and developed by <strong>html.design</strong></p>
+            <p>Dessigned and developed by <strong>Alyssa Maguiña & Lizardo Torres</strong></p>
          </div>
       </footer>
       <!-- end footer -->
+
+
       <!--=========== js section ===========-->
       <!-- jQuery (necessary for Bootstrap's JavaScript) -->
       <script src="js/jquery.min.js"></script>
