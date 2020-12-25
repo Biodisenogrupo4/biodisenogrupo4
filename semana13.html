@@ -128,83 +128,45 @@
                <div class="col-md-12 wow fadeInCenter" data-wow-delay="1s" data-wow-duration="2s">
                   <div class="full">
                      <h3><br>Circuito Integrado</h3>
-                     <p>Durante el periodo de pruebas, con la finalidad de comprobar el funcionamiento del sensor, así como la adecuada adquisición de las señales, se implementó un circuito integrado en una placa de pruebas (también conocido como protoboard) donde se armó el circuito con las adecuadas conexiones entre el Arduino y el sensor MAX30100, siguiendo las especificaciones de la hoja de datos del sensor o datasheet donde se hace el uso de resistencias 4.7k Ohmios en los pines SDA/SCL/INT para asegurar la calidad de la comunicación. A continuación, se muestra una figura representativa de las conexiones del arduino con el sensor:
+                     <p>Durante el periodo de pruebas, con la finalidad de comprobar el funcionamiento del sensor, así como la adecuada adquisición de las señales, se implementó un circuito integrado en una placa de pruebas (también conocido como protoboard) donde se armó el circuito con las adecuadas conexiones entre el Arduino y el sensor MAX30100, siguiendo las especificaciones de la hoja de datos del sensor o datasheet donde se hace el uso de resistencias 4.7k Ohmios en los pines SDA/SCL/INT para asegurar la calidad de la comunicación.
                      </p>
+                     <p><br>Cabe resaltar que durante las pruebas se utilizó por motivos de practicidad un módulo de Arduino UNO en lugar del Arduino Nano, originalmente planificado para el prototipo final; sin embargo, al compartir los mismos pines para la comunicación y transmisión de datos no se presenta inconveniente alguno en su funcionamiento.
+                           <br>Finalmente, el circuito integrado final en la placa de pruebas también contará con las conexiones del módulo de bluetooth HC-06 con el puerto serial del Arduino. La siguiente imagen muestra el circuito integrado final utilizado para la comprobación del funcionamiento del sistema:
+                           </p>
                      <div class="center"><img src="images/ckto.jpeg" alt="#" /></div>
                   </div>
                </div> 
             </div>
 
             
-            <!--SERVIDOR WEB Y BASE DE DATOS -->
+            <!--MODELO 3D -->
             <div class="row margin_bottom_30">
                <!-- featured cont -->
                <div class="col-md-12 cont_theme_blog">
                   <div class="full">
-                     <h3>SERVIDOR WEB Y BASE DE DATOS</h3>
+                     <h3>Manufactura y modelado del prototipo</h3>
                   </div>
                </div>
             </div>   
             <div class="row margin_bottom_30">
                <div class="col-md-12 wow fadeInCenter" data-wow-delay="1s" data-wow-duration="2s">
                   <div class="full">
-                     <h3>Servidor Web</h3>
-                     <p>Al inicio se trabajó en  un computador  de arquitectura ARM (Raspberry Pi 4) en el cual se instaló el sistema operativo Ubuntu para después dar acceso a la red a través del servidor Web Apache. Sin embargo, por dificultades de Hardware  con el computador  y  su conexión Ethernet se optó por una máquina virtual brindada por el proveedor “pythonanywhere” en el cual se trabajaría de manera directa subiendo  los códigos de la aplicación web, brindándonos una  dirección URL propia.
-                      <br></p>
+                     <p>Para  el  prototipado 3D se  utilizaron diferentes softwares para trabajar tanto el modelo tridimensional como la generación del g.code para la impresión. Se utilizó el programa Blender para el modelado por mallas y para la impresión se utilizó la plataforma “Slic3r” con la impresora “Artillery Genius”.
+                      <br>Para el proceso de diseño y  manufactura se  plantearon  unos primeros bosquejos en  base a la necesidad de un mejor sensado colocando al módulo MAX 30100 en  la zona  posterior de la muñeca. Se planeó en un inicio un sistema de cadena con una cavidad intermedia por el cual pasarían los cables que  interconectan el sensor con el Arduino. 
+                      <br>El material inicial fue ácido poliláctico (PLA), sin embargo debido a su falta de flexibilidad se optó cambiarlo por termoplástico de poliuretano (TPU) ya que brinda mayor flexibilidad  y resistencia. 
+                     </p>
+                     <p><br><br>A continuación se presentarán imágenes de las vistas del  modelo sin tapas en 3D Slic3r.En donde se  observa el flujo de las líneas del extrusor
+                     </p>
+                     <div class="center"><img src="images/3dslicer.png" alt="#" /></div>
+                     <p><br>A continuación se presentarán imágenes de las vista superior, frontal, lateral y ortogonal del modelo sin tapas en Blender.</p>
+                     <div class="center"><img src="images/blender.png" alt="#" /></div>
+                     <p><br>El modelo de impresión final es el que se observa en la siguiente figura, las tapas serán colocadas cuando el circuito se inserte dentro y los sensores sean atornillados para una mejor fijación. </p>
+                     <div class="center"><img src="images/finalmodel.png" alt="#" /></div>
                   </div>
                </div> 
             </div>
-            <div class="row margin_bottom_30">
-               <div class="col-md-12 wow fadeInCenter" data-wow-delay="1s" data-wow-duration="2s">
-                  <div class="full">
-                     <h3>Base de datos</h3>
-                     <p>Se desarrolló a través del sistema de administración de bases de  datos “MySQL”  teniendo en consideración ‘la notación de Chen’ para el desarrollo de diagramas entidad-relación, obedeciendo el desenvolvimiento de la base de datos las 12 reglas de Edgar Codd  donde los rombos representan las relaciones entre las tablas, los cuadrados los objetos propios que  definen cada tabla y los óvalos sus atributos. Los números entre líneas ayudan a la comprensión de relaciones, por ejemplo, un paciente tendrá N parámetros directos sensados.
-                      <br></p>
-                     <div class="center"><img src="images/basedatos.png" alt="#" /></div>
-                  </div>
-               </div> 
-            </div>
-            <div class="row margin_bottom_30">
-               <div class="col-md-12 wow fadeInCenter" data-wow-delay="1s" data-wow-duration="2s">
-                  <div class="full">
-                     <h3>Framework</h3>
-                     <p>Se desarrolló a través del sistema de administración de bases de  datos “MySQL”  teniendo en consideración ‘la notación de Chen’ para el desarrollo de diagramas entidad-relación, obedeciendo el desenvolvimiento de la base de datos las 12 reglas de Edgar Codd  donde los rombos representan las relaciones entre las tablas, los cuadrados los objetos propios que  definen cada tabla y los óvalos sus atributos. Los números entre líneas ayudan a la comprensión de relaciones, por ejemplo, un paciente tendrá N parámetros directos sensados.
-                      <br></p>
-                  </div>
-               </div> 
-            </div>
-            <div class="row margin_bottom_30">
-               <div class="col-md-12 wow fadeInCenter" data-wow-delay="1s" data-wow-duration="2s">
-                  <div class="full">
-                     <h3>Fronted</h3>
-                     <p>Se mostrará un perfil de usuario y contraseña donde a partir de la base de datos definida se dará acceso al médico responsable a su propia lista de pacientes, donde seleccionando el nombre de este se tendrá acceso a sus datos de monitoreo de manera sencilla. 
-                      <br></p>
-                  </div>
-               </div> 
-            </div>
-            
-            
-            <!--APPLICATIVO -->
-            <div class="row margin_bottom_30">
-               <!-- featured cont -->
-               <div class="col-md-12 cont_theme_blog">
-                  <div class="full">
-                     <h3>APLICATIVO (APP)</h3>
-                  </div>
-               </div>
-            </div>     
-            <div class="row margin_bottom_30">
-               <div class="col-md-12 wow fadeInCenter" data-wow-delay="1s" data-wow-duration="2s">
-                  <div class="full">
-                     <p>Para el desarrollo de la aplicación se usará la plataforma Android Studio con el lenguaje de programación Kotlin utilizando POO. A continuación se mostrarán algunos de los layouts que el usuario podrá visualizar directamente del aplicativo. 
-                      <br></p>
-                     <div class="center"><img src="images/app.png" alt="#" /></div>
-                     <p>La aplicación logrará conectar con la base de datos enviando y recibiendo información a través de Internet por el protocolo HTTP response. De igual manera, se comunicará con Arduino Nano a través de una conexión Bluetooth recibiendo la data generada por el sensor.</p>
-                  </div>
-               </div> 
-            </div>
-            
-           
+
+
          </div>
       </section>
       
@@ -213,7 +175,7 @@
       <section>
         <div class="container">
           <div class="col-md-4 cont_theme_blog" >
-            <div class="full slide_bt"> <a class="white_bt bt_main" id="onceavasemana" href="semana11.html"><-Anterior</a> </div>
+            <div class="full slide_bt"> <a class="white_bt bt_main" id="treceavasemana" href="semana13.html"><-Anterior</a> </div>
           </div>
         </div>
       </section>
@@ -221,7 +183,7 @@
       <section id="presentacion">
         <div class="container">
           <div class="row">
-            <div class="full slide_bt"> <a class="white_bt bt_main" id="treceavasemana" href="semana13.html">Siguiente -></a> </div>
+            <div class="full slide_bt"> <a class="white_bt bt_main" id="catorceavasemana" href="semana14.html">Siguiente -></a> </div>
           </div>
         </div>
       </section>
